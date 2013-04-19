@@ -1,0 +1,37 @@
+class Dog
+  def initialize(name)
+    @name = name
+  end
+
+  def name=(new_name) # writer / setter
+    @name = new_name
+  end
+
+  def name # getter / reader
+    @name
+  end
+
+  def speak
+    puts "Ruff, my name is #{ @name }."
+  end  
+end
+
+charlotte = Dog.new("Charlotte")
+charlotte.speak
+charlotte.name=("Char")
+charlotte.speak
+charlotte.name=("Charlotte Marlotte")
+puts charlotte.name
+
+class Dog
+
+  attr_accessor :name # creates writer and reader methods for name (preferable to writing your own methods)
+
+  def initialize(name)
+    @name = name
+  end
+
+  def speak
+    puts "Ruff, my name is #{ @name }."
+  end  
+end
