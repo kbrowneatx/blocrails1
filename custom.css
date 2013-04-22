@@ -1,0 +1,208 @@
+/* So the HTML5 structural tags work in older browsers */
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    margin: auto;
+    border: 2px solid #fcfcfc;
+    background-color: #fff;
+}
+h1, h2, h3 {
+	font-family: Georgia, Times, "Times New Roman", serif
+}
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fcfcfc;
+}
+a { text-decoration:none; }
+a:visited { text-decoration:none; }
+}
+/* the styles for the header */
+header {
+	clear: both;
+	color: #ccc;
+	background-color: #333;
+}
+#logo {
+	float: left;
+	padding: 20px 10px 10px 120px;
+}
+#srchbox {
+	float: right;
+	padding: 20px 140px 0 0;
+}
+nav {
+	clear: left;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #ccc;
+	background-color: #333;
+}
+nav ul {
+	margin-left: 10em;
+	margin-bottom: .5em;
+	list-style: none;
+	padding: .5em 2em .5em 0;
+}
+nav li {
+	display: inline;
+	padding: 0 3em;
+	border-right: 1px solid e3e3e3;
+	font-weight: bold;
+}
+nav a { 
+	color: #ccc;
+	text-decoration: none; 
+}
+
+/* the styles for the section */
+section {
+	padding-left: 20px;
+	width: 650px;
+}
+section h1 {
+	color: #800000;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+section h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+section p {
+	padding-bottom: .5em;
+}
+section ul {
+	padding: 0 0 1.5em 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+/* the styles for articles */
+article {
+	border-bottom: 1px dashed #ccc;
+	width:550px;
+	padding: 10px 20px 40px 20px;
+	float: right;
+}
+article.last {
+	border-bottom: 1px dashed #fff;
+	width:550px;
+	padding: 10px 20px 40px 20px;
+	float: right;
+}
+article h1 {
+	color: black;
+	padding: .5em 4em .5em 4em;
+}
+article img {
+	margin: 1em 0 1em 6em;
+	border: 1px solid #ccc;
+}
+article p {
+	padding: .5em 3em .5em 6em;
+	text-align: justify;
+}
+#typeicon {
+	width: 55px;
+	height: 45px;
+	float: left;
+	margin-left: -30px;
+	padding: 0;
+	vertical-align: baseline;
+	border: none;
+}
+/* the styles for the aside (list of links) */
+aside {
+	width: 250px;
+	float: right;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+aside ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+aside h2 {
+	color: #fff;
+	background-color: #e6e6e6;
+	border: 1px solid #b2b2b2;
+	padding: .1em 0 .1em .5em;
+}
+aside li {
+	margin: 0;
+	padding: 0;
+}
+
+aside li ul {
+	padding-bottom: 15px;
+}
+
+aside li li {
+	line-height: 25px;
+	border-bottom: 1px dotted #ccc;
+	padding-left: 15px;
+}
+
+aside li li span {
+	display: block;
+	margin-top: 0px;
+	line-height:15px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+aside p {
+	margin: 0 0px;
+	padding: 0px 20px 20px 20px;
+	text-align: justify;
+}
+
+aside a {
+	color: #787878;
+	border: none;
+}
+
+aside a:hover {
+	color: #ffffff;
+	background-color: #787878;
+	font-weight: bold;
+}
+aside img {
+	padding: 10px;
+}
+
+footer {
+	clear: both;
+	background: #333;
+	color: #ccc;
+}
+footer p {
+	padding: 1em 0;
+	text-align: center;
+}
+footer a {
+	color: #ccc;
+	text-decoration: underline;
+}
+footer img {
+	padding: 50px 0 0 0;
+	display: block;
+	margin: auto;
+}
