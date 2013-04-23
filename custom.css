@@ -7,52 +7,63 @@ article, aside, figure, footer, header, nav, section {
 	margin: 0;
 	padding: 0;
 }
-html {
-	background-color: white;
-}
+html {}
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Telex', sans-serif;
     font-size: 12px;
     width: 100%;
-    margin: auto;
-    border: 2px solid #fcfcfc;
-    background-color: #fff;
+    margin: 0 auto;
+    border: 2px solid #f2f2f2;
+    background-color: #fcfcfc;
 }
 h1, h2, h3 {
-	font-family: Georgia, Times, "Times New Roman", serif
+	font-family: 'Merriweather Sans', sans-serif;
 }
 #wrapper {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
-    background-color: #fcfcfc;
+    background-color: #f2f2f2;
 }
 a { text-decoration:none; }
 a:visited { text-decoration:none; }
-}
+
 /* the styles for the header */
 header {
-	clear: both;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
 	color: #ccc;
 	background-color: #333;
 }
+#titlebanner{
+	width: 400px;
+	position: absolute;
+	left: 400px;
+	top: 2px;
+	z-index: 0;
+}
 #logo {
 	float: left;
-	padding: 20px 10px 10px 120px;
+	margin-left: 120px;
+	margin-top: 65px;
+	border: 1px solid #eee;
 }
 #srchbox {
 	float: right;
-	padding: 20px 140px 0 0;
+	margin-right: 140px;
+	margin-top: 65px;
+	border: 1px solid #eee;
 }
 nav {
 	clear: left;
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
+	font: 16px/30px bold 'Telex';
 	color: #ccc;
 	background-color: #333;
 }
 nav ul {
-	margin-left: 10em;
+	margin-left: 140px;
 	margin-bottom: .5em;
 	list-style: none;
 	padding: .5em 2em .5em 0;
@@ -60,18 +71,23 @@ nav ul {
 nav li {
 	display: inline;
 	padding: 0 3em;
-	border-right: 1px solid e3e3e3;
+	border-right: 1px dotted #b6b6b6;
 	font-weight: bold;
 }
 nav a { 
 	color: #ccc;
 	text-decoration: none; 
 }
+nav a:hover{ 
+	color: #fff;
+	text-decoration: none; 
+}
 
 /* the styles for the section */
 section {
-	padding-left: 20px;
+	margin-left: 130px;
 	width: 650px;
+	background-color: #fcfcfc;
 }
 section h1 {
 	color: #800000;
@@ -97,6 +113,7 @@ article {
 	width:550px;
 	padding: 10px 20px 40px 20px;
 	float: right;
+	background-color: #fcfcfc;
 }
 article.last {
 	border-bottom: 1px dashed #fff;
@@ -105,23 +122,26 @@ article.last {
 	float: right;
 }
 article h1 {
+	font: 24px/32px 'Merriweather Sans', sans-serif;
+	font-weight: 800;
 	color: black;
-	padding: .5em 4em .5em 4em;
+	padding: .5em 2em .5em 3em;
 }
 article img {
+	width: 460px;
 	margin: 1em 0 1em 6em;
 	border: 1px solid #ccc;
 }
 article p {
-	padding: .5em 3em .5em 6em;
+	padding: .5em 1em .5em 6em;
 	text-align: justify;
 }
 #typeicon {
-	width: 55px;
-	height: 45px;
+	width: 60px;
+	height: 50px;
 	float: left;
-	margin-left: -30px;
-	padding: 0;
+	margin-left: -25px;
+	margin-bottom: 0;
 	vertical-align: baseline;
 	border: none;
 }
@@ -131,6 +151,7 @@ aside {
 	float: right;
 	padding-left: 20px;
 	margin-top: 20px;
+	margin-right: 50px;
 }
 
 aside ul {
@@ -139,6 +160,7 @@ aside ul {
 	list-style: none;
 }
 aside h2 {
+	font-family: 'Merriweather Sans', sans-serif;
 	color: #fff;
 	background-color: #e6e6e6;
 	border: 1px solid #b2b2b2;
@@ -170,7 +192,7 @@ aside li li span {
 
 aside p {
 	margin: 0 0px;
-	padding: 0px 20px 20px 20px;
+	padding: 0px 20px 20px 10px;
 	text-align: justify;
 }
 
